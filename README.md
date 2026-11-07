@@ -187,3 +187,14 @@ in this repository.
 Dataset licence: CC BY 4.0
 
 https://huggingface.co/datasets/xtxx/HepatoBench
+
+
+
+---
+
+## Full Research Report
+
+📄 **[Read the Complete LiverPath AI Research Report](docs/LiverPath_AI_Research_Report.pdf)**
+
+Complete methodology, experimental results, model evaluation,
+uncertainty quantification, calibration and scientific limitations.
