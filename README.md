@@ -192,9 +192,11 @@ https://huggingface.co/datasets/xtxx/HepatoBench
 
 ---
 
-## Full Research Report
+## Documentation
 
-📄 **[Read the Complete LiverPath AI Research Report](docs/LiverPath_AI_Research_Report.pdf)**
+| Document | Description |
+|---|---|
+| 📄 [Scientific Research Report](docs/LiverPath_AI_Research_Report.pdf) | Full methodology, experimental results and discussion |
+| 🔬 [Reproducibility Guide](docs/REPRODUCIBILITY.md) | Dataset, environment, experimental pipeline and evaluation |
 
-Complete methodology, experimental results, model evaluation,
-uncertainty quantification, calibration and scientific limitations.
+**Project status:** Completed exploratory research prototype. Not intended for clinical diagnosis.
