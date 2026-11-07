@@ -1,0 +1,56 @@
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Local IDE configuration
+.vscode/
+.idea/
+
+# Raw and processed histopathology data
+data/raw/
+data/processed/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Prediction-level outputs
+results/final_test/*predictions*.csv
+results/metrics/*predictions*.csv
+
+# Local files and secrets
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+
+# Dataset-level image audits and hashes
+results/metrics/image_hashes.csv
+results/metrics/perceptual_hashes.csv
+results/metrics/matching_perceptual_hashes.csv
+results/metrics/phash_near_duplicate_pairs.csv
+results/metrics/exact_duplicates.csv
+results/metrics/image_qc_results.csv
+
+# Patch-level inspection outputs
+results/metrics/*top100_uncertain_patches.csv
+results/metrics/*high_confidence_errors.csv
+
+# Duplicate visualisation exports
+results/visualisation_data/*.png
+results/visualisation_data/*.svg
+
+# Large patch-level evaluation tables
+results/metrics/finetuned_calibrated_assessment.csv
+results/metrics/resnet18_validation_uncertainty.csv

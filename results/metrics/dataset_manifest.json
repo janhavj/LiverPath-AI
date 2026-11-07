@@ -1,0 +1,46 @@
+{
+  "dataset_id": "xtxx/HepatoBench",
+  "revision": "3fd9d3697fb63a84ea0635aed97f77ad3f1c5d97",
+  "files": [
+    {
+      "filename": ".gitattributes",
+      "size_bytes": 2461
+    },
+    {
+      "filename": "01_TUM.zip",
+      "size_bytes": 587313467
+    },
+    {
+      "filename": "02_FIB.zip",
+      "size_bytes": 1045056514
+    },
+    {
+      "filename": "03_INF.zip",
+      "size_bytes": 229092597
+    },
+    {
+      "filename": "04_NEC.zip",
+      "size_bytes": 854690256
+    },
+    {
+      "filename": "05_NOR.zip",
+      "size_bytes": 565295677
+    },
+    {
+      "filename": "06_REA.zip",
+      "size_bytes": 68656046
+    },
+    {
+      "filename": "07_STE.zip",
+      "size_bytes": 265020210
+    },
+    {
+      "filename": "README.md",
+      "size_bytes": 926
+    },
+    {
+      "filename": "dataset_meta.json",
+      "size_bytes": 433
+    }
+  ]
+}

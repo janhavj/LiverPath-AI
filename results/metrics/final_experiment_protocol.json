@@ -1,0 +1,86 @@
+{
+  "project": "LiverPath AI",
+  "protocol_version": "1.0",
+  "frozen_at_utc": "2026-11-06T21:39:41.175937+00:00",
+  "dataset": {
+    "name": "HepatoBench",
+    "repository": "xtxx/HepatoBench",
+    "revision": "3fd9d3697fb63a84ea0635aed97f77ad3f1c5d97",
+    "evaluation_unit": "image_patch",
+    "patient_independent": false
+  },
+  "labels": [
+    "FIB",
+    "INF",
+    "NEC",
+    "NOR",
+    "REA",
+    "STE",
+    "TUM"
+  ],
+  "model": {
+    "architecture": "ResNet18",
+    "checkpoint": "models/resnet18_finetuned_best.pt",
+    "checkpoint_sha256": "a9e45c3a4f5b2d379b9f5ea28b0a7b9c9f11ce081a0604f2e99d045df2f5b4b1",
+    "input_size": [
+      224,
+      224
+    ],
+    "normalisation": "ImageNet"
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 1.0832799285254417,
+    "fit_data": "validation_calibration_subset"
+  },
+  "review": {
+    "primary_score": "uncalibrated_predictive_entropy",
+    "primary_review_fraction": 0.1,
+    "secondary_review_fractions": [
+      0.05,
+      0.2,
+      0.3
+    ],
+    "ranking": "descending_entropy"
+  },
+  "metrics": {
+    "classification": [
+      "accuracy",
+      "balanced_accuracy",
+      "macro_f1",
+      "per_class_precision_recall_f1"
+    ],
+    "uncertainty": [
+      "error_detection_auroc",
+      "error_detection_auprc",
+      "error_capture_rate",
+      "flagged_error_rate",
+      "unflagged_error_rate"
+    ],
+    "calibration": [
+      "ece_15_bins",
+      "multiclass_brier",
+      "negative_log_likelihood"
+    ]
+  },
+  "splits": {
+    "train": {
+      "path": "data/processed/splits/train.csv",
+      "sha256": "8c0b9eef22d1e682273595380187e65ff230d7090b42ccf1b73852479eda4243"
+    },
+    "validation": {
+      "path": "data/processed/splits/val.csv",
+      "sha256": "4833068766ecaac7a1f6e660336723a2be1b356ab6b05d50dc5cc37c2877fbb8"
+    },
+    "test": {
+      "path": "data/processed/splits/test.csv",
+      "sha256": "6c583ca766bfaa6b5ae49bbe5ba6a81a8cfe8d61e052767526b6afec7c086874"
+    }
+  },
+  "limitations": [
+    "Patch-level split without patient or slide identifiers",
+    "No independent patient-level evaluation",
+    "Validation set repeatedly used for model development",
+    "No external or prospective clinical validation"
+  ]
+}

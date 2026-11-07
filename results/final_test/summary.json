@@ -1,0 +1,22 @@
+{
+  "protocol_version": "1.0",
+  "checkpoint_sha256": "a9e45c3a4f5b2d379b9f5ea28b0a7b9c9f11ce081a0604f2e99d045df2f5b4b1",
+  "test_samples": 13083,
+  "errors": 926,
+  "accuracy": 0.9292211266529083,
+  "balanced_accuracy": 0.9134379313528529,
+  "macro_f1": 0.9005458197372677,
+  "uncertainty_auroc": 0.9079475139068747,
+  "uncertainty_auprc": 0.39275647842858075,
+  "temperature": 1.0832799285254417,
+  "uncalibrated": {
+    "ece": 0.008415386785765113,
+    "brier": 0.10557248600845,
+    "nll": 0.20820197463035583
+  },
+  "calibrated": {
+    "ece": 0.006165358170651667,
+    "brier": 0.10557235421277776,
+    "nll": 0.20723797380924225
+  }
+}

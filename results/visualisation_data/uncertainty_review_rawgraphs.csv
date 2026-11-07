@@ -1,0 +1,11 @@
+review_fraction,errors_captured,review_method
+0,0.0,Entropy-guided
+0,0.0,Random expectation
+5,30.67,Entropy-guided
+5,5.0,Random expectation
+10,56.8,Entropy-guided
+10,10.0,Random expectation
+20,81.53,Entropy-guided
+20,20.0,Random expectation
+30,91.58,Entropy-guided
+30,30.0,Random expectation

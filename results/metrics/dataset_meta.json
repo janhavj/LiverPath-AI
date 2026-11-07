@@ -1,0 +1,25 @@
+{
+  "dataset": {
+    "target_folders": [
+      "01_TUM.zip",
+      "02_FIB.zip",
+      "03_INF.zip",
+      "04_NEC.zip",
+      "05_NOR.zip",
+      "06_REA.zip",
+      "07_STE.zip"
+    ],
+    "num_classes": 7,
+    "num_samples": 87301,
+    "pixel":[150,150],
+    "num": {
+      "01_TUM":13200 ,
+      "02_FIB":26364,
+      "03_INF":4776,
+      "04_NEC":22023,
+      "05_NOR":13200,
+      "06_REA":1540,
+      "07_STE":6198
+    }
+  }
+}
